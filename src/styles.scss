@@ -1,0 +1,11 @@
+@use '/src/app/colors' as colors;
+
+html {
+    background-color: #FFF9C4;
+    width: 1080px;
+    display: flex;
+    margin: auto;    
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: colors.$main-font;
+}

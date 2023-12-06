@@ -1,0 +1,21 @@
+@use '../../colors' as colors;
+
+.timeline {
+    width: 12px;
+    height: 100%;
+    opacity: 0.5;
+    margin-left: 14px;
+    margin-right: 20px;
+    .circle {
+        border-radius: 50%;
+        border: 2px solid colors.$shirt-color;
+        width: 10px;
+        height: 10px;
+    }
+    .line {
+        margin-left: 6px;
+        border-left: 0.5px solid colors.$shirt-color;
+        width: 0px;
+        height: calc(100% - 12px);
+    }
+}

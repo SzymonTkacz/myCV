@@ -1,0 +1,141 @@
+<div class="cv">
+  <!-- -------------------------------------------------------- -->
+  <div class="left-side">
+    <div class="img-holder">
+      <img src="/assets/images/portret_squared.png" alt="">
+    </div>
+    <div class="left-content">
+
+      <left-header [header]="'CONTACT'"></left-header>
+      <div>
+        <div class="list-item">
+          <span class="material-symbols-outlined">phone_iphone</span>
+          <span>(+48) 506 466 077</span>
+        </div>
+        <div class="list-item">
+          <span class="material-symbols-outlined">alternate_email</span>
+          <span>szymon.tkacz.it@gmail.com</span>
+        </div>
+        <div class="list-item">
+          <span class="material-symbols-outlined">home</span>
+          <span>Katowice</span>
+        </div>
+      </div>
+
+      <left-header [header]="'LANGUAGES'"></left-header>
+      <div class="list-item">
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+        <span>Polish: native</span>
+      </div>
+      <div class="list-item">
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+        <span>English: upper-intermediate (B2)</span>
+      </div>
+      <div class="list-item">
+        <span class="material-symbols-outlined">arrow_right_alt</span>
+        <span>Portuguese: just started learning :)</span>
+      </div>
+
+      <left-header [header]="'INTERESTS'"></left-header>
+      <div class="interests">
+        Sports, automotive, technical
+        news, cryptocurrencies,
+        cryptography, physics and
+        astrophysics, LEGO, machine learning
+      </div>
+
+      <div class="agreement">
+        <div>I agree to the processing of personal
+          data provided in this document for
+          realizing the recruitment process
+          pursuant to the Personal Data Protection
+          Act of 10 May 2018 (Journal of Laws 2018,
+          item 1000) and in agreement with
+          Regulation (EU) 2016/679 of the European
+          Parliament and of the Council of 27 April
+          2016 on the protection of natural persons
+          with regard to the processing of personal
+          data and on the free movement of such
+          data, and repealing Directive 95/46/EC
+          (General Data Protection Regulation).</div>
+      </div>
+
+    </div>
+  </div>
+  <!-- -------------------------------------------------------- -->
+  <div class="right-side">
+
+    <div class="main-caption">
+      <h1><span class="name">Szymon</span>&nbsp;<span class="surname">Tkacz</span></h1>
+      <h4>Fullstack developer</h4>
+    </div>
+
+    <div class="main-content">
+      <div class="about-me">
+        <main-header [header]="'About me'"></main-header>
+        <div>I am a fast growing Software Developer with a wide range of experience in programming technologies.
+           When writing code, I feel like a fish in the water both on the frontend and on the backend. I am hardworking,
+           talented, ambitious person with head full of fancy ideas.
+        </div>
+      </div>
+
+      <div>
+        <main-header [header]="'Experience'"></main-header>
+        <div class="experience">
+          <div class="experience-row">
+            <company [company]="'Qodeca'" [date]="'10.2022 - ...'"></company>
+            <timeline></timeline>
+            <div class="job-description">
+              <div><span>Project#1</span> An administration panel used to manage a large network of gyms. Application was written in .NET7 and Angular 16 with NGXS state management.</div>
+              <div class="project-2"><span>Project#2</span> Application for organizing work and managing subcontracting companies as Frontend developer, Angular.</div>
+            </div>            
+          </div>
+          <div class="experience-row">
+            <company [company]="'Apa Group'" [date]="'07.2019 - 09.2022'"></company>
+            <timeline></timeline>
+            <div class="job-description">
+              <div><span>Project#3</span> At APA Group, as a Fullstack developer, I was responsible for
+                developing the application which was used to manage data from
+                production halls. On the backend side I developed the feature that
+                supported large amounts of real-time data using .NET technologies. On the frontend side, I created domain logic and UI
+                using the Angular 14 framework based on graphic designs from Figma
+                software.</div>
+            </div>
+          </div>
+          <div class="experience-row">
+            <company [company]="'Billennium'" [date]="'01.2019 - 06.2019'"></company>
+            <timeline></timeline>
+            <div class="job-description">
+              <div><span>Project#4</span>  Web application to operate the gratification
+                system for staff. Project written in technologies: Angular, Node.js +
+                Express.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <main-header [header]="'Skills'"></main-header>
+        <div class="skills">
+          <div class="realm">
+            <h5>Frontend</h5>
+            <p> <span>JavaScript</span>, TypeScript, <span>HTML5</span>, <span>Angular</span>, (RxJs, NGXS, Material Design, PrimeNG), RWD, CSS, Bootstrap, Tailwind.</p>
+          </div>
+          <div class="realm">
+            <h5>Backend</h5>
+            <p>C#, <span>.NET</span>, MySQL, Redis, Elasticsearch, <span>Dockers</span>,  CI/CD, basics of: Python, Linux and Bash. </p>
+          </div>
+          <div class="realm">
+            <h5>Machine Learning</h5>
+            <p>Basics of: Jupyter, Python with Scikit-Learn and TensorFlow libraries.</p>
+          </div>
+          <!-- <div class="realm">
+            <h5>Other Skills</h5>
+            <p><span>GIT</span>, JIRA, AGILE Scrum, cat. B driving license, ability to work with client</p>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

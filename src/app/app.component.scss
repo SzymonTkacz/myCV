@@ -1,0 +1,154 @@
+@use 'colors' as colors;
+
+$content-margin: 20px;
+
+.material-symbols-outlined {
+    color:colors.$main-color;
+    font-size: 36px;
+}
+
+.cv {
+    background-color: colors.$main-color;
+    width: 1080px;
+    height: 1523px;
+    display: flex;
+    border: 1px solid black;
+    //--------------------------------------
+    .left-side {
+        height: 100%;
+        background-color: colors.$shirt-color;
+        width: 35%;
+        position: relative;
+        color: colors.$main-color;
+        font-size: 24px;
+
+        .img-holder {
+            border-radius: 50%;
+            background-color: colors.$main-color;
+            margin-top: 30px;
+            margin-left: 80px;
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                max-width: 85%;
+                margin: 10px;
+                border-radius: 50%;
+                border: 15px solid colors.$second-color;
+            }
+        }
+
+        .left-content {
+            margin-top: 600px;
+
+            .list-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-left: $content-margin;
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+
+            .interests {
+                font-size: 18px;
+                margin-left: $content-margin;
+                margin-right: $content-margin;
+            }
+
+            .agreement {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                font-size: 12px;
+                font-weight: 100;
+                height: 200px;
+                opacity: 0.5;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+    }
+    //--------------------------------------
+    .right-side {
+        padding-right: 40px;
+        .main-caption {
+            margin-top: 230px;
+            margin-left: 160px;            
+            h1 {
+                font-family: "Tenor Sans";
+                font-size: 54px;
+                font-weight: 900;
+                text-transform: uppercase;
+                margin: 0px;
+                .surname {
+                    color: colors.$second-color;
+                }
+            }
+            h4 {
+                margin: 0px;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .main-content {
+            margin-top: 160px;
+            margin-left: 40px;
+            max-width: 650px;
+            .about-me {
+                padding-right: 50px;
+            }
+
+            .experience {
+                margin-top: 30px;
+                .experience-row {
+                    display: flex;
+                    .job-description {
+                        margin-top: -10px;
+                        margin-bottom: 30px;
+
+                        .project-2 {
+                            margin-top: 20px;
+                        }
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+
+            .skills {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                
+                .realm {
+                    padding-right: 20px;
+                    margin-right: 15px;
+                    padding-top: 20px;
+                    h5 {
+                        color: colors.$second-color;
+                        font-size: 18px;
+                        margin: 0;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        margin-top: 0px;
+                        margin-bottom: 10px;
+                        font-size: 19px;
+                        font-weight: 400;
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

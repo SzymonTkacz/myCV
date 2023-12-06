@@ -1,0 +1,11 @@
+@use '../../colors' as colors;
+
+.company {
+    width: 140px;
+    text-align: right;
+    margin-top: -14px;
+
+    .company-name {
+        color: colors.$second-color;
+    }
+}

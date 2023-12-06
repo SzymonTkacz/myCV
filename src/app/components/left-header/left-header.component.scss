@@ -1,0 +1,45 @@
+@use '../../colors' as colors;
+
+.left-header {
+    margin-top: 60px;
+    background-color: colors.$main-color;
+    width: 75%;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    color: colors.$main-font;
+    h1 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    .circle {
+        background-color: colors.$main-color;
+        border-radius: 50%;
+        height: 46px;
+        width: 46px;
+        margin-right: -23px;
+    }
+}
+
+.bottom-bar {
+    background-color: colors.$second-color;
+    margin-top: -28px;
+    width: 72%;
+    height: 46px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    opacity: 0.6;
+    margin-bottom: 20px;
+    .bottom-circle {
+        background-color: colors.$second-color;
+        border-radius: 50%;
+        height: 46px;
+        width: 46px;
+        margin-right: -23px;
+    }
+}
