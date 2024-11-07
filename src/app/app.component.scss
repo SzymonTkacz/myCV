@@ -47,7 +47,7 @@ $content-margin: 20px;
             .list-item {
                 display: flex;
                 align-items: center;
-                gap: 10px;
+                gap: 3px;
                 margin-left: $content-margin;
                 font-size: 17px;
                 margin-bottom: 10px;
@@ -112,8 +112,8 @@ $content-margin: 20px;
                         margin-top: -10px;
                         margin-bottom: 30px;
 
-                        .project-2 {
-                            margin-top: 20px;
+                        .project-margin-top {
+                            margin-top: 10px;
                         }
 
                         span {
